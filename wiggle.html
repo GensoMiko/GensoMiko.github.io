@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Elemen <head> adalah wadah untuk metadata (data tentang data) 
+        dan ditempatkan di antara tag <html> dan tag <body>. -->
+<head>
+    <!-- Tag <title> mendefinisikan judul dokumen. -->
+
+  <title>HTML Tutorial</title>
+
+  <!-- Atribut rel mendefinisikan hubungan antara 
+    sumber daya yang ditautkan dan dokumen saat ini. Berlaku di <link> , <a> , <area> , dan <form>-->
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!--Tag <meta> selalu masuk ke dalam elemen <head>, dan biasanya digunakan 
+      untuk menentukan set karakter, deskripsi halaman, kata kunci, penulis dokumen, dan pengaturan viewport.-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Tag <body> mendefinisikan isi dokumen. Elemen <body> berisi semua konten dokumen HTML, 
+    seperti heading, paragraf, gambar, hyperlink, tabel, daftar, dll. -->
+<body style="background-image:url('images/wiggle.jpg');">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+          <a class="navbar-brand" style="color:white" href="index.html">HTML</a>
+          <a class="navbar-brand" style="color:white" href="#">Wiggle</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" style="color:white" href="index.html#banner">Banner</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="index.html#Text">Text-Formatting</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="index.html#list">List</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="index.html#images">Images</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="index.html#link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="index.html#table">Tables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="index.html#form">Forms</a>
+                </li>
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+  <!-- load javascript after loading all html content -->
+  <script src="script/script.js"></script>
+  <!-- Text-Formatting section-->
+  <section id="Wiggle">
+      <br>
+      <br>
+      <br>
+                <img src="images/wiggle.gif" class= "center" alt="Wiggle" title="la wiggle"> </a>
+                <audio class="center" controls loop autoplay muted>
+                    <source src="images/Dance.mp3" type="audio/mpeg">
+                  </audio>
+                  

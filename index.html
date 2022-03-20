@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Elemen <head> adalah wadah untuk metadata (data tentang data) 
+        dan ditempatkan di antara tag <html> dan tag <body>. -->
+<head>
+    <!-- Tag <title> mendefinisikan judul dokumen. -->
+
+  <title>HTML Tutorial</title>
+
+  <!-- Atribut rel mendefinisikan hubungan antara 
+    sumber daya yang ditautkan dan dokumen saat ini. Berlaku di <link> , <a> , <area> , dan <form>-->
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!--Tag <meta> selalu masuk ke dalam elemen <head>, dan biasanya digunakan 
+      untuk menentukan set karakter, deskripsi halaman, kata kunci, penulis dokumen, dan pengaturan viewport.-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Tag <body> mendefinisikan isi dokumen. Elemen <body> berisi semua konten dokumen HTML, 
+    seperti heading, paragraf, gambar, hyperlink, tabel, daftar, dll. -->
+<body style="background-image:url('images/summon.jpg');">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+          <a class="navbar-brand" style="color:white" href="#">Satria</a>
+		  <a class="navbar-brand" style="color:white" href="#">HTML</a>
+          <a class="navbar-brand" style="color:white" href="wiggle.html">Wiggle</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" style="color:white" href="#Banner">Banner</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="#Text">Text-Formatting</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="#list">List</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="color:white" href="#images">Images</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="#link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="#table">Tables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="#form">Forms</a>
+                </li>
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+    <!-- Main Banner -->
+    <!-- main banner -->
+    <section class="bgimage" id="Banner">
+      <div class="container-fluid">
+          <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+              <h2 class="hero_title"></h2>
+              <p class="hero_desc"></p>
+          </div>
+          </div>
+      </div>
+  </section>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+    <!-- Text-Formatting section-->
+    <section id="Text">
+      <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+      background-size: contain;">
+          <h1 style="color:rgb(255, 81, 0)" class="text-center" id="h1"> Text Formatting (Ini adalah Heading) (h) </h1>
+          <div class="row mt-4">
+              <div class="col-lg-4">
+                <a href="images/guda.png" target="_blank">
+                  <img src="images/guda.png" class= "imagetextPage" alt="Gudako" title="la creatura"> </a>
+                  
+              </div>
+
+              <div class="col-lg-8">
+                  <p style="color:rgb(255, 81, 0);font-size:20px;"> Ini adalah Paragraf (p) dengan warna Orange (p style="color:"). Pada paragraf ini akan ditunjukan
+                      beberapa macam Text formatting seperti: 
+                      <br> <b> Text bold (b) </b> , <i> Text Italic (i) </i> , <mark> Text Marked (mark) </mark> , <del> Text Deleted (del) </del> , <sub> Text Subscript (sup) </sub>,
+                      <br> <strong> Text Important (strong) </strong> , <em> Text Emphasized (em) </em> , <small> Text Kecil (small) </small> , <ins> Text Insert (ins) </ins> , <sup> Text Superscript (sup) </sup>
+                  </p>
+                  <p style="color:rgb(255, 81, 0);font-size:20px;"> Untuk membuat teks seperti diatas tersebut, anda hanya harus mengetik tag dari macam macam Format text
+                contohnya seperti berikut:
+                <br> (Anggap Saja tanda kurung adalah tanda kurung sudut). <br> Untuk membuat teks dengan format bold maka: (b) Teks yang tebal (/b) maka hasilnya akan menjadi:
+                <br> <b> Teks yang tebal </b>
+                </p>
+                          </ul>
+
+                  </div>
+              </div>
+          </div>
+  </section>
+<!-- List section-->
+<section id="list">
+    <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+    background-size: contain;">
+        <h1 style="color:rgb(183, 206, 255)" class="text-center" id="h1"> HTML Lists </h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <a href="images/seiba.png" target="_blank">
+                <img src="images/seiba.png" class= "imagelistPage" alt="Saber" title="la rey"> </a>
+                
+            </div>
+
+            <div class="col-lg-8">
+                <p style="color:rgb(183, 206, 255);font-size:20px;"> List HTML memungkinkan Web Developer untuk mengelompokkan satu set item terkait dalam daftar.
+                    Contoh:
+                    <br> Unordered List:
+                    <ul style="color:rgb(183, 206, 255);font-size:20px;">
+                        <li>Bones</li>
+                        <li>Dusts</li>
+                        <li>Fangs</li>
+                    </ul>
+                </p>
+                <p style="color:rgb(183, 206, 255);font-size:20px;"> Jika Unordered List di urut dengan simbol, Ordered List di urut dengan angka. Contoh:
+              <br> Ordered List:
+              <ol style="color:rgb(183, 206, 255);font-size:20px;">
+                <li>SSR</li>
+                <li>SR</li>
+                <li>R</li>
+                </ol>
+              </p>
+                </ul>
+                    
+                <p style="color:rgb(183, 206, 255);font-size:20px;"> Sementara itu, ada pula Description List yang mengurutkan beberapa Istilah dengan deskripsi dari Istilah-Istilah tersebut. Contoh:
+                <br> Description List:
+                <div id="container">
+                    <div class="list">
+                <dl style="color:rgb(183, 206, 255);font-size:20px;">
+                    <dt>Gold</dt>
+                    <dd>- Scales</dd>
+                    <dd>- Claws</dd>
+                    <dd>- Hearts</dd>
+                </div>
+                </div>
+                <div class="list">
+                    <dl style="color:rgb(183, 206, 255);font-size:20px;">
+                    <dt>Silver</dt>
+                    <dd>- Ice</dd>
+                    <dd>- Crown</dd>
+                    <dd>- Pages</dd>
+                </div>
+                <div class="list">
+                    <dl style="color:rgb(183, 206, 255);font-size:20px;">
+                    <dt>Bronze</dt>
+                    <dd>- Stakes</dd>
+                    <dd>- Fluids</dd>
+                    <dd>- Chains</dd>
+                </div>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- images section-->
+<section id="images">
+    <div class="container mt-3">
+        <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+    background-size: contain;">
+        <h1 style="color:rgba(255, 255, 255, 0.747)" class="text-center" id="h1"> HTML Images </h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <a href="images/altera.png" target="_blank">
+                <img src="images/altera.png" class= "imageimagesPage" alt="Altera" title="la idiota"> </a>
+                </div>
+                <div class="col-lg-8">
+                    <p style="color:rgb(255, 255, 255);font-size:20px;"> Gambar dapat meningkatkan desain dan tampilan halaman web.
+                        <br> Tag HTML (img) digunakan untuk menyematkan gambar di halaman web.
+                        <ul style="color:rgb(255, 255, 255);font-size:20px">
+                            <li>Tag HTML (img) digunakan untuk menyematkan gambar di halaman web.</li>
+                            <li>Gambar secara teknis tidak dimasukkan ke dalam halaman web; gambar ditautkan ke web
+                                halaman. Tag (img) membuat ruang penyimpanan untuk gambar yang direferensikan.</li>
+                            <li>Tag (img) kosong, hanya berisi atribut, dan tidak memiliki penutup
+                                tag.</li>
+                            </ul>
+                            <dt style="color:rgb(255, 255, 255);font-size:20px">Tag (img) memiliki dua atribut yang diperlukan:
+                            <dl>❖ src - Specifies the path to the image</dl>
+                            <dl>❖ alt - Specifies an alternate text for the image</dl>
+                            </dt>
+
+                            <ul style="color:rgb(255, 255, 255);font-size:20px">
+                                <li>Atribut alt yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna untuk
+                                    beberapa alasan tidak dapat melihatnya (karena koneksi lambat, kesalahan dalam src
+                                    atribut, atau jika pengguna menggunakan pembaca layar).</li>
+                                <li>Nilai atribut alt harus mendeskripsikan gambar:
+                                    Contoh:
+                                    (img src="img_chania.jpg" alt="Bunga di Chania")</li>
+                                <li>Jika browser tidak dapat menemukan gambar, itu akan menampilkan nilai atribut alt
+                                    Contoh:
+                                    (img src="wrongname.gif" alt="Bunga di Chania")</li>
+                                </ul>
+                                </p>
+                            <dt style="color:rgb(255, 255, 255);font-size:20px">Image Size - Width and Height
+                            <dl>❖Anda dapat menggunakan atribut gaya untuk menentukan lebar dan tinggi gambar.
+                                Contoh
+                                (img src="img_girl.jpg" alt="Gadis berjaket" style="width:500px;height:600px;")</dl>
+                            <dl>❖Atau, Anda dapat menggunakan atribut lebar dan tinggi
+                                Contoh
+                                (img src="img_girl.jpg" alt="Gadis berjaket" width="500" height="600")</dl>
+                            <dl>❖Atribut lebar dan tinggi selalu menentukan lebar dan tinggi gambar
+                                dalam piksel</dl>
+                            </dt>
+                            <p style="color:rgb(255, 255, 255);font-size:20px">Sementara itu, Jika Image yang ingin disematkan berada di sebuah sub folder, anda dapat menautkan image itu seperti berikut (img src="x/x.jpg").
+                                Tetapi, Jika Image berada di suatu website atau server lain, maka cara menautkan Image tersebut adalah dengan melakukan (img src="(Link gambar tersebut)").
+                                </p>
+                            <p style="color:rgb(255, 255, 255);font-size:20px">Anda juga dapat membuat Image yang disematkan untuk float disebelah teks/paragraf yang anda buat seperti berikut:</p>
+                            <p style="color:rgb(255, 255, 255);font-size:20px">
+                            <img src="images/alteara.png" alt="AlTEAra" style="float:left;width:42px;height:42px;">
+                            <img src="images/smolwiggle.gif" alt="AlTEAra" style="float:right;width:42px;height:42px;">
+                            Untuk melakukan hal tersebut, anda harus menggunakan Style css dengan menyematkan image serta dengan style="float:left;width:42px;height:42px;".  
+                             </p>
+
+                            <p style="color:rgb(255, 255, 255);font-size:20px"> Selain itu, anda juga dapat memetakan sebuah Image untuk memiliki beberapa bagian yang dapat masing-masing di click, contohnya seperti berikut:
+                                <img src="images/suntaltera.png" alt="suntaltera" usemap="#suntaltera">
+                            <map name="suntaltera">
+                                <area shape="circle" coords="335, 400, 200" alt="Headtera" href="https://fategrandorder.fandom.com/wiki/Altera_the_San(ta)" target="_blank" onclick="face()">
+                                <area shape="rect" coords="315,622,410,760" alt="!" href="images/angrytera.gif" target="_blank">
+                                <area shape="poly" coords="270,725,153,778,144,958,285,1014,530,971,602,890,556,746,350,739" alt="Coffee" href="https://giphy.com/gifs/eating-humor-sheep-Txun6ahh9auWs?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=" target="_blank">
+                            </map>
+                            </p>
+
+                            <h1 style="color:rgb(255, 255, 255)"> Dan akhirnya, berikut beberapa contoh Images dengan format dan ukuran yang berbeda
+                            </h1>
+                            
+  
+                    </div>
+                </div>
+                
+        
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <a href="images/phonetera.png" target="_blank">
+                    <img id="myImg1" class="card-img-top" src="images/phonetera.png" alt="Card image" style="width:100%">
+                  </a><div class="card-body">
+                        <h4 class="card-title">Image yang Normal</h4>
+                        <p class="card-text"></p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                  <a href="images/phonetera.png" target="_blank">
+                    <img id="myImg2" class="card-img-top" src="images/phonetera.png" alt="Card image" style="width:100%;height:600px;">
+                    </a><div class="card-body">
+                        <h4 class="card-title">Image sebelumnya namun dengan height berbeda</h4>
+                        <p class="card-text"></p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                  <a href="images/confusedtera.gif" target="_blank"> 
+                    <img id="myImg3" class="card-img-top" src="images/confusedtera.gif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                  </a>  <h4 class="card-title">Sebuah contoh Image bergerak/Animasi (GIF)</h4>
+                        <p class="card-text"></p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+  </section>
+  
+  <!-- link section-->
+<section id="link">
+    <div class="container mt-3">
+        <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+    background-size: contain;">
+        <h1 style="color:rgba(255, 255, 255, 0.747)" class="text-center" id="h1"> HTML Links </h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <a href="images/thebinchdance.gif" target="_blank">
+                <img src="images/thebinchdance.gif" class= "imagelinkPage" alt="DaVinci" title="la genio"> </a>
+                </div>
+                <div class="col-lg-8">
+                    <p style="color:rgb(255, 255, 255);font-size:20px;"> Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengklik dengan cara mereka
+                        dari halaman ke halaman <br>
+                        ● Tautan HTML adalah hyperlink <br>
+                        ● Anda dapat mengklik tautan dan melompat ke dokumen lain. <br>
+                        ● Saat Anda menggerakkan mouse di atas tautan, panah mouse akan berubah menjadi tangan kecil <br>
+                        ● Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau HTML lainnya
+                        elemen <br>
+                        Secara default, tautan akan muncul sebagai berikut di semua browser: <br>
+                        ❖ Tautan yang belum dikunjungi digaris bawahi dan berwarna biru <br>
+                        ❖ Tautan yang dikunjungi digaris bawahi dan berwarna ungu <br>
+                        ❖ Tautan aktif digaris bawahi dan merah <br>
+                        <a href="https://en.wikipedia.org/" title="this leads to wikipedia" style="color:rgb(255, 255, 255);font-size:20px;" target="_blank"> Sebuah Contoh Link </a> <br>
+                        Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. untuk mengubah hal ini, Anda harus menentukan target lain untuk tautan tersebut. <br>
+                        Link diatas tersebut, dan link-link yang tersebar di bagian-bagian sebelumnya menggunakan target _blank yang berarti link akan muncul di tab baru. 
+                        Target yang lain adalah <br> 
+                        ❖_self, target yang bersifat default dan akan menampilkan halaman yang ditaut di tab yang sedang dibuka <br>
+                        ❖_parent, Membuka dokumen dalam bingkai induk <br>
+                        ❖_top, Membuka dokumen di seluruh badan jendela <br>
+                        Link yang dicontohkan diatas merupakan sebuah Link Absolute, sebuah link yang menunjukan alamat web yang penuh, selain Link Absolute ada Link Relative yaitu link local (berada di website yang sama) <br>
+                        Untuk membuat sebuah Link menjadi lebih menarik, anda dapat menggabungkannya dengan tag Button, contoh berikut akan menampilkan hal tersebut dan juga link menuju sebuah alamat email dengan mailto <br>
+                        <a href = "mailto:lumenaumbral@gmail.com?subject = Feedback&body = Message" target="_blank">
+                            <button type="button" class="btn btn-success mt-3">Email This!</button> </a>
+                        </p>
+                    </div>
+                    </div>
+                </section>
+
+ <!-- table section-->
+ <section id="table">
+    <div class="container mt-3">
+        <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+    background-size: contain;">
+        <h1 style="color:rgba(255, 255, 255, 0.747)" class="text-center" id="h1"> HTML Tables </h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <a href="images/tamamo.png" target="_blank">
+                <img src="images/tamamo.png" class= "imagetablePage" alt="Tamamo" title="la volpe"> </a>
+                </div>
+                <div class="col-lg-8">
+                    <p style="color:rgb(255, 255, 255);font-size:20px;"> Tabel HTML memungkinkan pengembang web untuk mengatur data ke dalam baris dan kolom, 
+                        Sebuah tabel dalam HTML terdiri dari sel-sel tabel di dalam baris dan kolom. Contoh: <br>
+                        <table style="color:rgb(255, 255, 255);font-size:20px;">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>Chaldea</td>
+                                <td>Goredolf von Musik</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Clocktower</td>
+                                <td>El-Melloi</td>
+                                <td>England</td>
+                            </tr>
+                            <tr>
+                                <td>Atlas Institute</td>
+                                <td>Sion Eltnam Atlasia</td>
+                                <td>Greenland</td>
+                            </tr>
+                            </table>
+                        </table>
+                        <p style="color:rgb(255, 255, 255);font-size:20px;">
+                        ● Setiap sel tabel ditentukan oleh tag (td) dan (/td) <br>
+                        ● td adalah singkatan dari tabel data <br>
+                        ● Segala sesuatu di antara (td) dan (/td) adalah konten sel tabel <br>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+
+ <!-- form section-->
+ <section id="form">
+    <div class="container mt-3">
+        <div class="container mt-4 pt-4" style="background-image: url('images/sterrennacht.jpg'); 
+    background-size: contain;">
+        <h1 style="color:rgb(251, 255, 0)" class="text-center" id="h1"> HTML Forms </h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <a href="images/gohho.png" target="_blank">
+                <img src="images/gohho.png" class= "imagetablePage" alt="Gogh" title="la artista"> </a>
+                </div>
+                <div class="col-lg-8">
+                    <p style="color:rgb(251, 255, 0);font-size:20px;"> 
+                        Formulir HTML digunakan untuk mengumpulkan input pengguna. Masukan pengguna paling sering dikirim
+                        ke server untuk diproses <br>
+                        ● Elemen (form) digunakan untuk membuat formulir HTML untuk input pengguna <br>
+                        ● Elemen (input), Elemen HTML (input) adalah elemen form yang paling banyak digunakan dan dapat ditampilkan dalam banyak cara, tergantung pada jenis atribut </p>
+                    <dl style="color:rgba(251, 255, 0);font-size:20px;">
+                    <dt>Beberapa Jenis elemen (html) input</dt>
+                    <dd>● (input type="text") Menampilkan kolom input teks satu baris</dd>
+                    <dd>● (input type="radio") Menampilkan tombol radio (untuk memilih salah satu dari banyak pilihan)</dd>
+                    <dd>● (input type="checkbox") Menampilkan kotak centang (untuk memilih nol atau lebih dari banyak pilihan)</dd>
+                    <dd>● (input type="submit") Menampilkan tombol kirim (untuk mengirimkan formulir)</dd>
+                    <dd>● (input type="button") Menampilkan tombol yang dapat diklik</dd>
+                    </dl>
+                    <p style="color:rgb(251, 255, 0);font-size:20px;"> 
+                        Berikut adalah contoh sebuah Form HTML: </p>
+                        <div class="col-lg-6">
+                        <form style="color:rgb(251, 255, 0);font-size:20px;">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" class="form-control form-control-lg"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email" class="form-control mt-3"> <br>
+                            <label for="subject">Subject:</label><br>
+                            <input type="text" id="subject" name="subject" class="form-control mt-3"> <br>
+                            <div class="mb-3 mt-3">
+                            <label for="message">Message here:</label><br>
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message here..."></textarea> <br>
+
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">A</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">B</label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">C</label> <br> <br>
+
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">     D</label><br>
+                            <input type="checkbox"    id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">     E</label><br>
+                            <input type="checkbox"     id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">    F</label> <br>
+                          </div>
+                          </form>
+                          <a href = "mailto:lumenaumbral@gmail.com?subject = Feedback&body = Message">
+                            <button type="button" class="btn btn-success mt-3">Message Me</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </section>
+
+ <!-- footer section-->
+ <footer id="footer">
+  <div class="container-fluid">
+      <!-- social media icons -->
+      <div class="social-icons mt-4">
+          <a href="https://m.facebook.com/Reiuji11" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/v_satria_v/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/Gensomiko" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
